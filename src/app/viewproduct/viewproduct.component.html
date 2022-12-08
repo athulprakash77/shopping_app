@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">description </th>
+                    <th scope="col">price</th>
+                    <th scope="col">discountPercentage</th>
+                    <th scope="col">rating</th>
+                    <th scope="col">stock</th>
+                    <th scope="col">brand</th>
+                    <th scope="col">category</th>
+                    <th scope="col">thumbnail</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of products">
+                    <th scope="row">{{i.id}}</th>
+                    <th scope="row">{{i.title}}</th>
+                    <th scope="row">{{i.description}}</th>
+                    <th scope="row">{{i.price}}</th>
+                    <th scope="row">{{i.discountPercentage}}</th>
+                    <th scope="row">{{i.rating}}</th>
+                    <th scope="row">{{i.stock}}</th>
+                    <th scope="row">{{i.brand}}</th>
+                    <th scope="row">{{i.category}}</th>
+                    <th scope="row"><img src="{{i.thumbnail}}" alt=""></th>
+
+                  </tr>
+                
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div>
