@@ -12,8 +12,8 @@ export class ViewproductComponent implements OnInit {
 
   datafromApi=()=>{
     this.api.fetchproduct().subscribe(
-    (Response)=>{
-      this.products=Response
+    (Response:any)=>{
+      this.products=Response.products
     }
     )
   }
